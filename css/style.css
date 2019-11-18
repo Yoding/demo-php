@@ -1,0 +1,294 @@
+  body {
+    background-color: #DDDDDD;
+    font-family: PMingLiU, DFKai-SB;
+    margin: 0;
+  }
+
+  .container{
+    width: 100%;
+    min-width: 650px;
+  }
+
+  a {
+      text-decoration: none;
+      color: white;
+  }
+
+  button {
+    background-color: #DCDCDC;
+    padding: 3px;
+    font-family: STHeiti;
+  }
+
+  .btn {
+    background-color: #DDDDDD;
+    color: #666666;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  .btn:hover {
+    border-bottom: 3px solid #48D1CC;
+  }
+
+/*Navigation*/
+  nav {
+    width: 100%;
+    background-color: #008B8B;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__btn {
+    color: white;
+    justify-content: space-between;
+  }
+
+  .page__title {
+    width: 100px;
+    font-family: Tahoma;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  .alert__info {
+
+    line-height: 16pt;
+    padding-top: 4px;
+    margin: 4px 5px;
+  }
+
+  .account__info {
+    width: 20%;
+    padding-top: 7px;
+    padding-right: 10px;
+  }
+
+  .account__info > * {
+    border-bottom: 1.5px solid white;
+    font-size: 12pt;
+    padding: 5px;
+    margin: 0px 10px;
+  }
+
+/*Board Outlook*/
+  .message__board {
+    width: 600px;
+    background-color: #F5F5F5;
+    margin: 30px auto;
+    padding-bottom: 30px;
+  }
+
+  .board__title { 
+    width: 90px;
+    height: 30px;
+    padding: 15px 20px;
+    font-size: 16pt;
+    margin: 0 auto;
+  }
+
+  .message__number {
+    color: #008B8B;
+  }
+
+/*Form*/
+  .reply__section {
+    margin: 0px 50px;
+  }
+
+  .reply__input {
+    width: 500px;
+    height: 150px;
+    font-size: 14pt;
+    margin:10px 0px;
+    box-sizing: border-box;
+    border: 3px solid #008B8B;
+    vertical-align: bottom;
+  }
+
+  .reply__username {
+    width: 500px;
+    border: none;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .submit__btn {
+    width: 500px;
+    background-color: #DCDCDC;
+    padding: 5px;
+    margin: 10px 0px;
+    font-family: STHeiti;
+  }
+
+/*Message*/
+  .message__section {
+    background-color: #F5F5F5;
+    margin: 10px;
+  }
+
+  .info {
+    width: 510px;
+    color: #008B8B;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    display: inline-flex;
+  }
+
+  .message {
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px 5px;
+    border-bottom: 2px solid #48D1CC;
+    font-size: 11pt;
+  }
+
+  .nickname{
+    width: 150px;
+    font-size: 16pt;
+    font-family: Papyrus;
+    font-weight: 600;
+  }
+
+  .time__stamp {
+    position: relative;
+    right: -200px;
+  }
+
+  .content {
+    width: 410px;
+  }
+
+  .reply__area{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+/*Edit options*/
+.edit__block {
+    width: 100px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    right: -400px;
+    margin: 5px;
+}
+
+.edit__block > div {
+    width: 30px;
+    padding: 2px;
+    margin: 5px 2px;
+}
+
+.edit__msg__form > div {
+    margin: 5px;
+}
+
+/*Sub message*/
+  .show__submsg {
+  width: 12pt;
+  line-height: 10pt;
+  background: #008B8B;
+  color: white;
+  border-radius: 50%;
+  padding: 3px;
+  }
+
+  .submsg__block > * {
+    margin-top: 3px;
+  }
+
+  .submit__submsg {
+    width: 40px;
+    padding: 3px;
+    display: inline-block;
+  }
+
+  .del__submsg {
+    background: #DCDCDC;
+    border-radius: 50%;
+    margin-right: 5px;
+    /*未即時顯示、圓心待修正*/
+  }
+
+  .submsg {
+    padding:10px;
+  }
+
+  .current__submsg {
+  color: #444444;
+  padding: 5px;
+  margin: 2px 0px 0px 0px;
+  }
+
+  .same {
+    border-bottom: 2px solid #DCDCDC;
+  }
+
+  .other {
+    border-bottom: 2px solid white;
+  }
+
+/*Pagination & Footer*/
+  .pagination {
+    width: 150px;
+    margin: 0px auto;
+    padding: 20px 0px;
+  }
+
+  .pagination > a {
+    color:black;
+    padding: 8px 10px;
+    margin: 0 auto;
+    transition: background-color .3s;
+  }
+
+  .pagination a.active {
+    background-color:#008B8B;
+    color: white;
+  }
+
+  .pagination a:hover:not(active) {
+    background-color: #ddd;
+  }
+
+  .data_footer {
+    color: #008B8B;
+    text-align: right;
+    margin-right: 40px;
+  }
+
+/*RWD*/
+    @media only screen and (max-width: 768px) {
+  .page__title {
+    margin-left: 5px;
+  }
+
+  .alert__info {
+    width: 57%;
+    line-height: 12pt;
+    margin: 4px 5px;
+  }
+
+  .account__info > * {
+    border-bottom: 1.5px solid white;
+    font-size: 12pt;
+    line-height: 14pt;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .account__info {
+    position: relative;
+    right: -60px;
+  }
+
+  .message__board {
+    margin: 0 auto;
+  }
+
+}
